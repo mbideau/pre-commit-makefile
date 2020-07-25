@@ -1,5 +1,4 @@
 # Introduction
-[![CircleCI](https://circleci.com/gh/smian/pre-commit-makefile.svg?style=svg)](https://circleci.com/gh/smian/pre-commit-makefile)
 
 Useful Git [pre-commit](http://pre-commit.com) hooks when using Makefiles such as generating documentation in
 README.md.
@@ -27,7 +26,7 @@ _For operating systems, other than macOS, check the [official documentation](htt
 
 ```
 cat <<EOF > .pre-commit-config.yaml
-- repo: git://github.com/smian/pre-commit-makefile
+- repo: git://github.com/johncblandii/pre-commit-makefile
   sha: master
   hooks:
     - id: makefile-doc
