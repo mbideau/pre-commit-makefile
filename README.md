@@ -24,7 +24,7 @@ _For operating systems, other than macOS, check the [official documentation](htt
 
 ```bash
 cat <<EOF > .pre-commit-config.yaml
-- repo: git://github.com/johncblandii/pre-commit-makefile
+- repo: git://github.com/mbideau/pre-commit-makefile
   rev: master
   hooks:
     - id: makefile-doc
