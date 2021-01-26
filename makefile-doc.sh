@@ -31,8 +31,8 @@ for path_uniq in $(echo "${paths[*]}" | tr ' ' '\n' | sort -u); do
     continue
   fi
 
-  START_LINE="\`\`\`bash\n\$ make help\n\n"
-  END_LINE="\n\`\`\`"
+  START_LINE="\n\`\`\`text\n"
+  END_LINE="\n\`\`\`\n"
 
   # Remove color codes and add make help output to temp file
    echo -e "$START_LINE$(make help | sed "s,$(printf '\033')\\[[0-9;]*[a-zA-Z],,g")$END_LINE" > "$tmp_file"
